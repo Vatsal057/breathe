@@ -1,0 +1,26 @@
+name: Feature Request
+description: Propose a new feature, improvement, or technique
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Share your feature request or enhancement idea.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Motivation
+      description: What problem does this solve or what practice does it support?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe how you envision this feature working in the app.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any other approaches or existing tools you have tried.

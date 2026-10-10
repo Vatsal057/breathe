@@ -1,0 +1,28 @@
+name: Bug Report
+description: File a bug report or unexpected behavior
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting an issue! Please provide detailed context.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the behavior, expected vs actual outcome, and steps to reproduce.
+    validations:
+      required: true
+  - type: input
+    id: device-info
+    attributes:
+      label: Device & Environment
+      description: OS version (Android/iOS), device model, Expo Go or bare build.
+      placeholder: e.g. Android 14 (Pixel 7), Expo Go SDK 57
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Error Messages
+      description: Relevant terminal or app console logs.
+      render: shell
